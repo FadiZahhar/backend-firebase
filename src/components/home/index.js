@@ -8,4 +8,4 @@ const Home = () => {
     )
 }
 
-export default Hone;
+export default Home;

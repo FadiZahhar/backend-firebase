@@ -1,5 +1,5 @@
-import React , {component} from "react";
-import { Switch, Route, BrowserRouter } from "react-route-dom";
+import React , {Component} from "react";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Header from "./components/header";
 import Footer from "./components/footer";
 
@@ -8,13 +8,13 @@ import Contact from "./components/contact";
 import Home from "./components/home";
 
 
-class Routes extends component {
+class Routes extends Component {
     render(){
         return(
         <BrowserRouter>
             <Header />
             <Switch>
-
+                <Route path="/login" component={Login} />
                 <Route path="/contact" component={Contact} />
                 <Route path="/" component={Home} />
             </Switch>
